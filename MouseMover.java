@@ -20,7 +20,6 @@ public class MouseMover {
         int times = myObj.nextInt();  // Read user input
 
         new MouseMover().changeCursorLocation(times);
-
     }
 
     public synchronized void changeCursorLocation(int times){
