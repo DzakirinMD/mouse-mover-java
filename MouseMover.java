@@ -1,17 +1,11 @@
 import java.awt.*;
-import java.sql.Timestamp;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-import java.util.Date;
 import java.util.Scanner;
 
 /**
- * Datatime Formatter: https://www.javatpoint.com/java-localdatetime#:~:text=Java%20LocalDateTime%20class%20is%20an,%2DHH%2Dmm%2Dss.
- * How to calculate time : https://www.callicoder.com/how-to-add-subtract-days-hours-minutes-seconds-to-date-java/
+ * Datatime Formatter: <a href="https://www.javatpoint.com/java-localdatetime#:~:text=Java%20LocalDateTime%20class%20is%20an,%2DHH%2Dmm%2Dss">...</a>.
+ * How to calculate time : <a href="https://www.callicoder.com/how-to-add-subtract-days-hours-minutes-seconds-to-date-java/">...</a>
  */
 public class MouseMover {
 
@@ -46,8 +40,6 @@ public class MouseMover {
             // width and height of the screen
             final int width = 1024;
             final int height = 720;
-            int movement = 0;
-            long counter = 0;
 
             while (time.compareTo(newTime) < 0){
 
@@ -62,18 +54,9 @@ public class MouseMover {
 
                 //mouse will move in every 10 seconds
                 this.wait(10000);
-//                counter++;
-//                System.out.println("Cursor has moved " + (movement = movement + 1) + " times already !");
                 robot.mouseMove((int)(Math.random()*width), (int)(Math.random()*height));
             }
 
-//            while (counter <= times){
-//                //mouse will move in every 10 seconds
-//                this.wait(10000);
-//                counter++;
-//                System.out.println("Cursor has moved " + (movement = movement + 1) + " times already !");
-//                robot.mouseMove((int)(Math.random()*width), (int)(Math.random()*height));
-//            }
         } catch (AWTException | InterruptedException e) {
             e.printStackTrace();
         }
