@@ -60,11 +60,11 @@ public class MouseMover {
 
                 time = LocalTime.parse(LocalTime.now().format(format));
                 if (returnVal > 0) {
-                    System.out.println("Current time while program is running : " + time);
+                    System.out.println("Current time while program is running : " + time + " will end at : " + newTime);
                 }else if (returnVal == 0) {
-                    System.out.println("Current time while program is running : " + time);
+                    System.out.println("Current time while program is running : " + time + " will end at : " + newTime);
                 }else {
-                    System.out.println("Current time while program is running : " + time);
+                    System.out.println("Current time while program is running : " + time + " will end at : " + newTime);
                 }
 
                 //mouse will move in every 10 seconds
