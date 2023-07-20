@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mouse-mover-java1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mouse-mover-java.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
